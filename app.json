@@ -1,29 +1,45 @@
 {
   "expo": {
-    "name": "Dating",
+    "name": "pimp",
     "slug": "Dating",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/bicon.jpeg",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/destroyer.jpeg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lomu.Dating",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/hall.jpeg",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.lomu.Dating"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/des.jpeg"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6257eaca-253d-48b4-b409-edb8b75831b2"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/6257eaca-253d-48b4-b409-edb8b75831b2"
     }
   }
 }

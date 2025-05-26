@@ -4,6 +4,7 @@ import Card from "../Components/Card";
 import { StyleSheet, View } from "react-native";
 import Colors from "../Constants/Colors";
 export default () => {
+
     return (
         <View style={styles.container}>
             <Search style={styles.searchBar} />

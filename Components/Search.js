@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         flex: 0.05,
         paddingVertical: 30,
         paddingHorizontal: 20,
-        backgroundColor: "white"
+        // backgroundColor: "#fff"
 
     },
     searchBox: {

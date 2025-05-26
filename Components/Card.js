@@ -7,10 +7,10 @@ export default function InstagramFeed() {
     const pics = [
         {
             id: '1',
-            name: "John Doe",
+            name: "2pac Otieno",
             age: 23,
             location: "Kisumu",
-            Description: "Mustang GT",
+            Description: "Mustang GT 585hp 5.1 Litre v8 ",
             image: {
                 uri: "https://i.pinimg.com/736x/15/9b/0d/159b0d06693d76d291a6e84aefa85e45.jpg"
             }
@@ -101,7 +101,6 @@ export default function InstagramFeed() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
         paddingTop: 20,
     },
     imageContainer: {
@@ -126,17 +125,17 @@ const styles = StyleSheet.create({
         borderRadius: 8,
     },
     nameText: {
-        fontSize: 22,
+        fontSize: 40,
         fontWeight: 'bold',
         color: '#fff',
     },
     locationText: {
-        fontSize: 16,
+        fontSize: 30,
         color: '#eee',
         marginTop: 2,
     },
     descriptionText: {
-        fontSize: 14,
+        fontSize: 18,
         color: '#ddd',
         marginTop: 6,
     }

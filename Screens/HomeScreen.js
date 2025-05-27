@@ -7,13 +7,11 @@ import { StatusBar } from "expo-status-bar";
 export default () => {
 
     return (
-        <>
-            <StatusBar barStyle="dark-content" backgroundColor="#fff" />
-            <View style={styles.container}>
-                <Search style={styles.searchBar} />
-                <Card style={styles.cardSection} />
-            </View>
-        </>
+
+        <View style={styles.container}>
+            <Search style={styles.searchBar} />
+            <Card style={styles.cardSection} />
+        </View>
     )
 }
 

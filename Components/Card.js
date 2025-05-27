@@ -7,12 +7,12 @@ export default function InstagramFeed() {
     const pics = [
         {
             id: '1',
-            name: "2pac Otieno",
-            age: 23,
+            name: "2pac Atieno",
+            age: 25,
             location: "Kisumu",
             Description: "Mustang GT 585hp 5.1 Litre v8 ",
             image: {
-                uri: "https://i.pinimg.com/736x/15/9b/0d/159b0d06693d76d291a6e84aefa85e45.jpg"
+                uri: "https://i.pinimg.com/736x/99/c1/3e/99c13e2e3339fb796bb76b8a9095d8b3.jpg"
             }
         },
         {
@@ -22,7 +22,7 @@ export default function InstagramFeed() {
             location: "Nairobi",
             Description: "Vintage aesthetics 🎞️",
             image: {
-                uri: "https://i.pinimg.com/736x/97/c0/2a/97c02a0308fb42a4ea3daaabdfef24a6.jpg"
+                uri: "https://i.pinimg.com/736x/99/1d/c5/991dc518993f9d9d4f6f389b6dd904fa.jpg"
             }
         },
         {
@@ -32,7 +32,7 @@ export default function InstagramFeed() {
             location: "Mombassa",
             Description: "Black panther BMW M5",
             image: {
-                uri: "https://i.pinimg.com/736x/6c/5f/45/6c5f45a6877ff424cf103aba4881c7e4.jpg"
+                uri: "https://i.pinimg.com/736x/b5/b1/e5/b5b1e5a8aceb2f2c84ec868ca938dafc.jpg"
             }
         },
         {

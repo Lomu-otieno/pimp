@@ -35,7 +35,7 @@ export default function ChatScreen() {
 const styles = StyleSheet.create({
     safeArea: {
         flex: 1,
-        backgroundColor: "#000"
+        backgroundColor: "#111"
     },
     container: {
         flex: 1

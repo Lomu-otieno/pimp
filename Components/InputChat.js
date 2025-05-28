@@ -10,7 +10,7 @@ export default function InputChat() {
                 value={message}
                 onChangeText={setMessage}
                 placeholder="Type your message"
-                placeholderTextColor="#ccc"
+                placeholderTextColor="#e4e4e4"
                 style={styles.input}
             />
             <TouchableOpacity style={styles.button}>
@@ -34,16 +34,18 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         borderWidth: 1,
         borderColor: "#555",
-        marginRight: 10
+        marginRight: 10,
+        fontSize: 20
     },
     button: {
         paddingVertical: 10,
         paddingHorizontal: 20,
-        backgroundColor: "#fff",   // White button background
+        backgroundColor: "#e4e4e4",
         borderRadius: 20
     },
     buttonText: {
-        color: "#000", // Black text on white button
+        fontSize: 18,
+        color: "#000",
         fontWeight: "bold"
     }
 });

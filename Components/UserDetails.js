@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     userDetails: {
         position: "absolute",
         right: 0,
-        top: 75,
+        top: 168,
     },
     usernameText: {
         fontSize: 22,

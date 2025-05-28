@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet, Image, SafeAreaView } from "react-native";
 
 export default function ProfileImage() {
-    const image = { uri: "https://i.pinimg.com/736x/03/8a/c0/038ac0e2741b4f63e58197255085451b.jpg" };
+    const image = { uri: "https://i.pinimg.com/736x/90/be/d3/90bed3f4907b5b087fbf431158e0a3c0.jpg" };
 
     return (
         <SafeAreaView style={styles.container}>
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: "flex-start",
-        padding: 20,
+        padding: 0
     },
     profileImage: {
         position: "absolute",

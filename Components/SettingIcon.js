@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 
-export default function Settings() {
+export default function SettingsIcon() {
     return (
         <View style={styles.container} >
             <TouchableOpacity style={styles.settingButton}>

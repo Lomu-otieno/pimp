@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         justifyContent: "flex-start",
         left: 5,
         alignContent: "center",
-        backgroundColor: "#fff",
+        backgroundColor: "#e4e4e4",
 
     },
     UserDetails: {

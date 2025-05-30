@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         width: 250,
         textAlign: "center",
-        backgroundColor: "#e4e4e4",
+        backgroundColor: "#fff",
         borderRadius: 5
     },
     usernameEmail: {

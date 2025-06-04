@@ -4,7 +4,9 @@ import {
     View,
     KeyboardAvoidingView,
     Platform,
-    ImageBackground
+    ImageBackground,
+    TouchableWithoutFeedback,
+    Keyboard
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import InputChat from "../Components/InputChat";
@@ -16,18 +18,22 @@ export default function ChatScreen() {
 
     return (
         <SafeAreaView style={styles.safeArea}>
-            <KeyboardAvoidingView
-                style={styles.container}
-                behavior={Platform.OS === "ios" ? "padding" : "height"}
-                keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
-            >
-                <ImageBackground source={image} resizeMode="cover" style={styles.background}>
-                    <View style={styles.chatBody}>
-                        {/* This is where messages would go */}
-                    </View>
-                    <InputChat />
-                </ImageBackground>
-            </KeyboardAvoidingView>
+            <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+                <KeyboardAvoidingView
+                    style={styles.container}
+                    behavior={Platform.OS === "ios" ? "padding" : "height"}
+                    keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
+                >
+                    <ImageBackground source={image} resizeMode="cover" style={styles.background}>
+                        <View style={styles.chatWrapper}>
+                            <View style={styles.chatBody}>
+                                {/* Future: Messages will appear here */}
+                            </View>
+                            <InputChat />
+                        </View>
+                    </ImageBackground>
+                </KeyboardAvoidingView>
+            </TouchableWithoutFeedback>
         </SafeAreaView>
     );
 }
@@ -41,6 +47,10 @@ const styles = StyleSheet.create({
         flex: 1
     },
     background: {
+        flex: 1,
+        justifyContent: "flex-end"
+    },
+    chatWrapper: {
         flex: 1,
         justifyContent: "flex-end"
     },

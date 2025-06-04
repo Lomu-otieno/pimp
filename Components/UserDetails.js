@@ -1,14 +1,13 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default function UserProfile() {
+export default function UserDetails() {
     const DATA = ["John Doe", "username@gmail.com"];
+
     return (
         <View style={styles.container}>
-            <View style={styles.userDetails}>
-                <Text style={styles.usernameText}>{DATA[0]}</Text>
-                <Text style={styles.usernameEmail}>{DATA[1]}</Text>
-            </View>
+            <Text style={styles.name}>{DATA[0]}</Text>
+            <Text style={styles.email}>{DATA[1]}</Text>
         </View>
     );
 }
@@ -17,27 +16,16 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: "center",
-        alignItems: "flex-end",
-        padding: 20,
+        marginLeft: 15
     },
-    userDetails: {
-        position: "absolute",
-        right: 0,
-        top: 168,
-    },
-    usernameText: {
+    name: {
         fontSize: 22,
-        paddingHorizontal: 5,
-        paddingVertical: 10,
-        width: 250,
-        textAlign: "center",
-        backgroundColor: "#fff",
-        borderRadius: 5
+        fontWeight: "bold",
+        color: "#111"
     },
-    usernameEmail: {
-        paddingHorizontal: 0,
-        paddingVertical: 10,
-        fontSize: 20,
-        color: "#555"
+    email: {
+        fontSize: 16,
+        color: "#555",
+        marginTop: 4
     }
 });

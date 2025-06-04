@@ -11,10 +11,10 @@ export default () => {
         <>
             {/* <StatusBar barStyle="light-content" backgroundColor="#fff" /> */}
             <View style={{ flex: 1, backgroundColor: "#fff" }}>
-                <HomeScreen />
+                {/* <HomeScreen /> */}
                 {/* <Chat /> */}
                 {/* <Profile /> */}
-                {/* <Settings /> */}
+                <Settings />
 
             </View>
         </>

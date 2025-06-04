@@ -1,30 +1,30 @@
 import React from "react";
-import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-
+import { View, StyleSheet, TouchableOpacity } from "react-native";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 export default function SettingsIcon() {
     return (
-        <View style={styles.container} >
-            <TouchableOpacity style={styles.settingButton}>
-                <FontAwesome name="gear" size={30} color="#111" />
+        <View>
+            <TouchableOpacity style={styles.button}>
+                <FontAwesome name="gear" size={26} color="#111" />
             </TouchableOpacity>
-        </ View>
-    )
+        </View>
+    );
 }
 
-const iconSize = 50
-const styles = StyleSheet.create({
-    container: {
+const SIZE = 50;
 
-    },
-    settingButton: {
+const styles = StyleSheet.create({
+    button: {
+        width: SIZE,
+        height: SIZE,
+        backgroundColor: "#ccc",
+        borderRadius: SIZE / 2,
         justifyContent: "center",
         alignItems: "center",
-        width: iconSize,
-        height: iconSize,
-        borderRadius: iconSize / 2,
-        padding: 10,
-        backgroundColor: "#e4e4e4",
-    },
-})
+        shadowColor: "#000",
+        shadowOpacity: 0.1,
+        shadowOffset: { width: 2, height: 2 },
+        shadowRadius: 4
+    }
+});

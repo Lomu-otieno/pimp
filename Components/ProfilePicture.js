@@ -1,34 +1,27 @@
 import React from "react";
-import { View, StyleSheet, Image, SafeAreaView } from "react-native";
+import { View, StyleSheet, Image } from "react-native";
 
-export default function ProfileImage() {
+export default function ProfilePicture() {
     const image = { uri: "https://i.pinimg.com/736x/90/be/d3/90bed3f4907b5b087fbf431158e0a3c0.jpg" };
 
     return (
-        <SafeAreaView style={styles.container}>
-            <View >
-                <Image source={image} style={styles.profileImage} />
-            </View>
-        </SafeAreaView>
+        <View style={styles.container}>
+            <Image source={image} style={styles.profileImage} />
+        </View>
     );
 }
 
-const IMAGE_SIZE = 200;
+const IMAGE_SIZE = 100;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: "flex-start",
-        padding: 0
+        padding: 10
     },
     profileImage: {
-        position: "absolute",
-        top: 15,
-        left: 0,
         width: IMAGE_SIZE,
         height: IMAGE_SIZE,
         borderRadius: IMAGE_SIZE / 2,
-        borderWidth: 1,
-        borderColor: "#fff"
+        borderWidth: 2,
+        borderColor: "#fff",
     }
 });

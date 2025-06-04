@@ -4,6 +4,15 @@ import { View, TextInput, TouchableOpacity, Text, StyleSheet } from "react-nativ
 export default function InputChat() {
     const [message, setMessage] = useState("");
 
+    const handleSend = () => {
+        if (!message.trim()) return;
+
+        // Add your message sending logic here
+        console.log("Sent:", message);
+
+        setMessage(""); // Clear input after sending
+    };
+
     return (
         <View style={styles.inputContainer}>
             <TextInput
@@ -13,7 +22,11 @@ export default function InputChat() {
                 placeholderTextColor="#e4e4e4"
                 style={styles.input}
             />
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity
+                style={[styles.button, !message.trim() && { opacity: 0.5 }]}
+                onPress={handleSend}
+                disabled={!message.trim()}
+            >
                 <Text style={styles.buttonText}>Send</Text>
             </TouchableOpacity>
         </View>
@@ -25,26 +38,30 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         padding: 10,
-        backgroundColor: "#000",  // Black background
+        backgroundColor: "#000",
+        borderTopWidth: 1,
+        borderColor: "#333"
     },
     input: {
         flex: 1,
         color: "#fff",
-        padding: 10,
-        borderRadius: 20,
+        paddingVertical: 8,
+        paddingHorizontal: 15,
+        borderRadius: 25,
         borderWidth: 1,
-        borderColor: "#555",
-        marginRight: 10,
-        fontSize: 20
+        borderColor: "#666",
+        fontSize: 20,
+        backgroundColor: "#222",
+        marginRight: 10
     },
     button: {
         paddingVertical: 10,
-        paddingHorizontal: 20,
+        paddingHorizontal: 16,
         backgroundColor: "#e4e4e4",
-        borderRadius: 20
+        borderRadius: 25
     },
     buttonText: {
-        fontSize: 18,
+        fontSize: 20,
         color: "#000",
         fontWeight: "bold"
     }

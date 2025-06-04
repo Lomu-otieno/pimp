@@ -2,29 +2,27 @@ import React, { useState } from "react";
 import { View, StyleSheet, TextInput, Text, TouchableOpacity } from "react-native"
 import Colors from "../Constants/Colors";
 
-export default () => {
+export default ({ style }) => {
     const [search, setSearch] = useState('');
     return (
-        <View style={styles.container}>
+        <View style={[styles.container, style]}>
             <View style={styles.searchBox}>
                 <TextInput
                     style={styles.searchInput}
                     placeholder="search..."
                     placeholderTextColor={Colors.searchColor}
                     value={search}
-                    onChange={setSearch}
+                    onChangeText={setSearch}
                     autoCapitalize="none"
                 />
                 <TouchableOpacity style={styles.cancelButton}>
                     <Text style={styles.cancelButtonText}>cancel</Text>
                 </TouchableOpacity>
-
             </View>
-
-        </View >
-
+        </View>
     );
-}
+};
+
 
 const styles = StyleSheet.create({
     container: {

@@ -21,10 +21,12 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff"
     },
     searchBar: {
-        flex: 1,
+        height: 60,
+        paddingHorizontal: 10,
+        paddingTop: 10,
     },
     cardSection: {
-        justifyContent: "center"
-
+        flex: 1,
+        paddingTop: 10,
     }
-})
+});

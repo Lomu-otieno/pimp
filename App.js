@@ -1,22 +1,21 @@
-import React from "react";
-import { View } from "react-native";
-import HomeScreen from "./Screens/HomeScreen";
-import { StatusBar } from "expo-status-bar";
-import Chat from "./Screens/Chat";
-import Profile from "./Screens/Profile";
-import Settings from "./Screens/Settings";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import BottomTabs from './Navigation/BottomTabs';
+import FullScreenImage from './Screens/FullScreenImage';
 
-export default () => {
+const Stack = createNativeStackNavigator();
+
+export default function App() {
     return (
-        <>
-            {/* <StatusBar barStyle="light-content" backgroundColor="#fff" /> */}
-            <View style={{ flex: 1, backgroundColor: "#fff" }}>
-                {/* <HomeScreen /> */}
-                {/* <Chat /> */}
-                {/* <Profile /> */}
-                <Settings />
+        <NavigationContainer>
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
+                {/* Bottom tab navigator as the main app flow */}
+                <Stack.Screen name="Main" component={BottomTabs} />
 
-            </View>
-        </>
-    )
-} 
+                {/* Full screen image view */}
+                <Stack.Screen name="FullScreenImage" component={FullScreenImage} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
+}

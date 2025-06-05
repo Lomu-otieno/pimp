@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/foregroundImage.png",
         "backgroundColor": "#000"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.lomu.pimp"
     },
     "web": {
       "favicon": "./assets/icon.png"

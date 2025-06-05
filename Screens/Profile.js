@@ -7,7 +7,7 @@ import UserDetails from "../Components/UserDetails";
 import SettingsIcon from "../Components/SettingIcon";
 import Posts from "../Components/Posts";
 
-export default function Profile() {
+const Profile = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.headerSection}>
@@ -24,7 +24,7 @@ export default function Profile() {
             </View>
         </SafeAreaView>
     );
-}
+};
 
 const styles = StyleSheet.create({
     container: {
@@ -46,3 +46,5 @@ const styles = StyleSheet.create({
         left: 20
     }
 });
+
+export default Profile;

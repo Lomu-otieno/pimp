@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
     StyleSheet,
     View,
@@ -12,10 +12,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import InputChat from "../Components/InputChat";
 
 export default function ChatScreen() {
-    const image = {
-        uri: "https://i.pinimg.com/736x/5a/db/59/5adb59c4e0f1ad06875bd1a7d6069d69.jpg"
-    };
-
+    const image = { uri: "https://i.pinimg.com/736x/5a/db/59/5adb59c4e0f1ad06875bd1a7d6069d69.jpg" };
     return (
         <SafeAreaView style={styles.safeArea}>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -24,14 +21,14 @@ export default function ChatScreen() {
                     behavior={Platform.OS === "ios" ? "padding" : "height"}
                     keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
                 >
-                    <ImageBackground source={image} resizeMode="cover" style={styles.background}>
-                        <View style={styles.chatWrapper}>
-                            <View style={styles.chatBody}>
-                                {/* Future: Messages will appear here */}
-                            </View>
-                            <InputChat />
+                    {/* <ImageBackground source={image} resizeMode="center" style={styles.background}> */}
+                    <View style={styles.chatWrapper}>
+                        <View style={styles.chatBody}>
+                            {/* Future: Messages will appear here */}
                         </View>
-                    </ImageBackground>
+                        <InputChat />
+                    </View>
+                    {/* </ImageBackground> */}
                 </KeyboardAvoidingView>
             </TouchableWithoutFeedback>
         </SafeAreaView>
@@ -41,7 +38,7 @@ export default function ChatScreen() {
 const styles = StyleSheet.create({
     safeArea: {
         flex: 1,
-        backgroundColor: "#111"
+        backgroundColor: "#e4e4e4"
     },
     container: {
         flex: 1

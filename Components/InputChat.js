@@ -38,9 +38,9 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         padding: 10,
-        backgroundColor: "#000",
         borderTopWidth: 1,
-        borderColor: "#333"
+        borderColor: "#333",
+        marginBottom: 15,
     },
     input: {
         flex: 1,
@@ -52,17 +52,17 @@ const styles = StyleSheet.create({
         borderColor: "#666",
         fontSize: 20,
         backgroundColor: "#222",
-        marginRight: 10
+        marginRight: 10,
     },
     button: {
         paddingVertical: 10,
         paddingHorizontal: 16,
-        backgroundColor: "#e4e4e4",
+        backgroundColor: "#000",
         borderRadius: 25
     },
     buttonText: {
         fontSize: 20,
-        color: "#000",
+        color: "#fff",
         fontWeight: "bold"
     }
 });
